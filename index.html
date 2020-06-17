@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="initial-scale=1,minimum-scale=1">
-    <title>微博搜索-热搜榜</title>
+    <title>地家热搜</title>
     <link href="./微博搜索-热搜榜_files/video.css" rel="stylesheet">
     <link href="./微博搜索-热搜榜_files/global.css" rel="stylesheet">
     <link href="./微博搜索-热搜榜_files/module.css" rel="stylesheet">
     <link href="./微博搜索-热搜榜_files/page.css" rel="stylesheet">
     <link href="./微博搜索-热搜榜_files/card.css" rel="stylesheet">
     <link href="./微博搜索-热搜榜_files/layer_show_pic.css" rel="stylesheet">
-    
+    <link rel="icon" href="https://tvax4.sinaimg.cn/crop.0.0.1002.1002.180/0071YMZSly8gdi6kpklzyj30ru0rudgs.jpg?KID=imgbed,tva&Expires=1592363729&ssig=HKtameq38l" sizes="60×60" type="image/jpg"/>
     <script type="text/javascript">
         var $PHOTO_TAGS=[]
         var $CONFIG = {};
@@ -26,7 +26,7 @@
         $CONFIG['setCover'] = 1; //ie6hack
         $CONFIG['version'] = '202006011140';
         $CONFIG['bigpipe'] = 'false';
-        $CONFIG['timeDiff'] = (new Date() - 1592274676000);
+        $CONFIG['timeDiff'] = (new Date() - 1592279638000);
         $CONFIG['product'] = 'search';
         $CONFIG['pageid'] = 'top';
         $CONFIG['skin'] = '';
@@ -34,7 +34,7 @@
         $CONFIG['jsPath'] = '//jstest.t.sinajs.cn/t4/';
         $CONFIG['cssPath'] = '//img.t.sinajs.cn/t4/';
         $CONFIG['imgPath'] = '//img.t.sinajs.cn/t4/';
-        $CONFIG['servertime'] = 1592274676;
+        $CONFIG['servertime'] = 1592279638;
         $CONFIG['ad_url_jump'] = '';
         $CONFIG['$webim'] = 0; //1;
         $CONFIG['mJsPath'] = ['https://js{n}.t.sinajs.cn/t4/', 1, 2];
@@ -53,11 +53,11 @@
     <div class="logo"><a href="https://s.weibo.com/" class="logo_img"></a></div>
     <div class="searchbox" node-type="searchBar">
     <div class="search-input">
-        <input type="text" node-type="text" maxlength="40" autocomplete="off" value="" >
+        <input type="text" node-type="text" maxlength="40" autocomplete="off" value="">
         <div class="m-sug-list" node-type="suggestbox">
         </div>
     </div>
-    <button class="s-btn-b" node-type="submit" >搜索</button>
+    <button class="s-btn-b" node-type="submit">搜索</button>
 </div>
     </div>
 <!--/搜索-->
@@ -65,8 +65,8 @@
     <div class="m-wrap" id="plc_main">
         <div class="menu">
             <a href="https://s.weibo.com/top/summary?cate=realtimehot" title="热搜榜" class="cur">热搜榜</a>
-            <!-- <a href="https://s.weibo.com/top/summary?cate=socialevent" title="要闻榜">要闻榜</a>
-            <a href="https://s.weibo.com/top/summary?cate=total&amp;key=friends" title="好友搜">好友搜</a> -->
+            <a href="https://s.weibo.com/top/summary?cate=socialevent" title="要闻榜">要闻榜</a>
+            <a href="https://s.weibo.com/top/summary?cate=total&amp;key=friends" title="好友搜">好友搜</a>
         </div>
         <div class="data" id="pl_top_realtimehot">
             <p style="color:#999;margin:0 0 10px 28px">实时热点，每周一更新</p>
@@ -80,7 +80,7 @@
                 </thead>
                 <tbody>
                     <tr class="">
-                        <td class="td-01"><i class="icon-top"></i></td>
+                        <td class="td-01">置顶</td>
                         <td class="td-02">
                             <a href="https://weibo.com/p/1008086ce193057da1da01a284f80ec2868ca9/super_index" target="_blank">EXO每日一签到</a>
                         </td>
@@ -313,13 +313,13 @@
                 <a href="https://weibo.com/p/100808d3b3cef812a9ae03a21734800ea3697b?u=6ce193057da1da01a284f80ec2868ca9&m=4516406974327942&cu=5887401584&k=%E5%90%B4%E4%B8%96%E5%8B%8B&forward_name=pageinfo&_from_=topic_forward" target="_blank" title="微博社区公约">吴世勋</a>
             </div>
             <p class="copyright">
-                爱丽有限公司 纯属娱乐 若有侵犯 删除
+                地有限公司 纯属娱乐 若有侵犯 删除
                 <a href="https://weibo.com/aj/static/jww.html" target="_blank">EXOplant</a>
                 <a href="http://www.miibeian.gov.cn/" target="_blank">7个帅哥不容错过</a>
-                <!-- <select id="pl_language_language">
+                <select id="pl_language_language">
                     <option value="zh-cn" selected="selected">中文(简体)</option>
                     <option value="zh-tw">中文(繁体)</option>
-                </select> -->
+                </select>
                 
             </p>
         </div>
@@ -341,7 +341,7 @@
 <!--脚部-->
 <!--回到顶部-->
 <div id="pl_common_scrollToTop">
-    <div class="m-gotop" node-type="scrollToTop" style="">
+    <div class="m-gotop" node-type="scrollToTop" style="display: none;">
         <a href="javascript:void(0);" class="wbicon">Ú</a>
     </div>
 </div>
@@ -369,7 +369,7 @@
 <!-- <script src="//js.t.sinajs.cn/t6/page/js/pl/third/search/index.js?version=2018073117" type="text/javascript"></script> -->
 
 <div id="weibo_top_public"><!--spec start--><!--简易顶部导航拼页面用-->
-    <div class="WB_global_nav WB_global_nav_v2 WB_global_nav_alpha" node-type="top_all">
+    <div class="WB_global_nav WB_global_nav_v2 WB_global_nav_alpha " node-type="top_all">
       <div class="gn_header clearfix">
         <!-- logo -->
         <div class="gn_logo" node-type="logo" data-logotype="logo" data-logourl="//weibo.com?topnav=1&amp;mod=logo">
@@ -380,7 +380,7 @@
          <!-- logo -->
          <!-- 搜索    -->
                         <div class=" gn_search_v2">
-                    <span class=" placeholder">爱丽为何如此有才</span><input type="text" node-type="searchInput" autocomplete="nope" value="" class="W_input" name="15922746782952">
+                    <span class=" placeholder">大家正在搜：地粉为何这么有才</span><input type="text" node-type="searchInput" autocomplete="nope" value="" class="W_input" name="15922796397822">
           <a href="javascript:void(0);" title="搜索" node-type="searchSubmit" class="W_ficon ficon_search S_ficon" suda-uatrack="key=topnav_tab&amp;value=search" target="_top">f</a>
           <!--搜索热词下拉-->
           <div class="gn_topmenulist_search" node-type="searchSuggest" style="display:none;">
@@ -396,7 +396,7 @@
         <div class="gn_position">
 	        <div class="gn_nav">
 	            <ul class="gn_nav_list">
-	          	    <li><a href="/" nm="home" class="S_txt1" suda-uatrack="key=topnav_tab&amp;value=homepage" target="_top"><em class="W_ficon ficon_home S_ficon">E</em><em class="S_txt1">首页</em><em class="W_new"></em></a></li>
+	          	    <li><a href="https://weibo.com/p/1008086ce193057da1da01a284f80ec2868ca9/super_index" nm="home" class="S_txt1" suda-uatrack="key=topnav_tab&amp;value=homepage" target="_top"><em class="W_ficon ficon_home S_ficon">E</em><em class="S_txt1">首页</em><em class="W_new"></em></a></li>
                                           <li><a href="https://weibo.com/tv" nm="tv" class="S_txt1" suda-uatrack="key=topnav_tab&amp;value=video"><em class="W_ficon ficon_wb_vb S_ficon"></em><em class="S_txt1">视频</em><em class="W_new"></em></a></li>
                                         <li><a href="https://d.weibo.com/?topnav=1&amp;mod=logo&amp;wvr=6" nm="find" class="S_txt1" suda-uatrack="key=topnav_tab&amp;value=discover" target="_top"><em class="W_ficon ficon_found S_ficon">F</em><em class="S_txt1">发现</em></a></li>
 	                                       	                      <li><a href="http://game.weibo.com/?topnav=1&amp;mod=logo&amp;wvr=6" nm="game" class="S_txt1" suda-uatrack="key=topnav_tab&amp;value=game" target="_top"><em class="W_ficon ficon_game S_ficon">G</em><em class="S_txt1">游戏</em></a></li>
@@ -419,7 +419,7 @@
           
           		<!--/下拉层--> 
         	</div>
-        </div>       
+        </div>         
       </div>
     </div>
     <!--/简易顶部导航拼页面用-->
