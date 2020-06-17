@@ -1,428 +1,279 @@
 <!DOCTYPE html>
-<!-- saved from url=(0060)https://s.weibo.com/top/summary?Refer=top_hot&topnav=1&wvr=6 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="initial-scale=1,minimum-scale=1">
-    <title>地家热搜</title>
-    <link href="./微博搜索-热搜榜_files/video.css" rel="stylesheet">
-    <link href="./微博搜索-热搜榜_files/global.css" rel="stylesheet">
-    <link href="./微博搜索-热搜榜_files/module.css" rel="stylesheet">
-    <link href="./微博搜索-热搜榜_files/page.css" rel="stylesheet">
-    <link href="./微博搜索-热搜榜_files/card.css" rel="stylesheet">
-    <link href="./微博搜索-热搜榜_files/layer_show_pic.css" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地榜</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="https://tvax4.sinaimg.cn/crop.0.0.1002.1002.180/0071YMZSly8gdi6kpklzyj30ru0rudgs.jpg?KID=imgbed,tva&Expires=1592363729&ssig=HKtameq38l" sizes="60×60" type="image/jpg"/>
-    <script type="text/javascript">
-        var $PHOTO_TAGS=[]
-        var $CONFIG = {};
-        $CONFIG['islogin'] = '1';
-        $CONFIG['uid'] = '5887401584';
-        $CONFIG['nick'] = '爱丽热搜榜';
-        $CONFIG['domain'] = '';
-        $CONFIG['watermark'] = '爱丽热搜榜';
-        $CONFIG['prov'] = '100:其他';
-        $CONFIG['city'] = '';
-        $CONFIG['setCover'] = 1; //ie6hack
-        $CONFIG['version'] = '202006011140';
-        $CONFIG['bigpipe'] = 'false';
-        $CONFIG['timeDiff'] = (new Date() - 1592279638000);
-        $CONFIG['product'] = 'search';
-        $CONFIG['pageid'] = 'top';
-        $CONFIG['skin'] = '';
-        $CONFIG['lang'] = 'zh-cn';
-        $CONFIG['jsPath'] = '//jstest.t.sinajs.cn/t4/';
-        $CONFIG['cssPath'] = '//img.t.sinajs.cn/t4/';
-        $CONFIG['imgPath'] = '//img.t.sinajs.cn/t4/';
-        $CONFIG['servertime'] = 1592279638;
-        $CONFIG['ad_url_jump'] = '';
-        $CONFIG['$webim'] = 0; //1;
-        $CONFIG['mJsPath'] = ['https://js{n}.t.sinajs.cn/t4/', 1, 2];
-        $CONFIG['mCssPath'] = ['https://img{n}.t.sinajs.cn/t4/', 1, 2];
-        $CONFIG['s_domain'] = '//s.weibo.com';
-        $CONFIG['isAuto'] = 0;//0自动播放
-    </script>
-    
-    
-    <script src="./微博搜索-热搜榜_files/bootstrap.js.下载"></script>
-<style></style><link rel="Stylesheet" type="text/css" charset="utf-8" href="./微博搜索-热搜榜_files/WB_outframe.css"><div style="position: absolute; top: -9999px;"><div id="js_style_css_module_global_WB_outframe"></div></div><style></style></head>
-<body class="wbs-hotrank">
-<div class="m-main">
-    <!--搜索-->
-<div class="m-search" id="pl_feedtop_top">
-    <div class="logo"><a href="https://s.weibo.com/" class="logo_img"></a></div>
-    <div class="searchbox" node-type="searchBar">
-    <div class="search-input">
-        <input type="text" node-type="text" maxlength="40" autocomplete="off" value="">
-        <div class="m-sug-list" node-type="suggestbox">
-        </div>
-    </div>
-    <button class="s-btn-b" node-type="submit">搜索</button>
-</div>
-    </div>
-<!--/搜索-->
-    <!--内容 aa-->
-    <div class="m-wrap" id="plc_main">
-        <div class="menu">
-            <a href="https://s.weibo.com/top/summary?cate=realtimehot" title="热搜榜" class="cur">热搜榜</a>
-            <a href="https://s.weibo.com/top/summary?cate=socialevent" title="要闻榜">要闻榜</a>
-            <a href="https://s.weibo.com/top/summary?cate=total&amp;key=friends" title="好友搜">好友搜</a>
-        </div>
-        <div class="data" id="pl_top_realtimehot">
-            <p style="color:#999;margin:0 0 10px 28px">实时热点，每周一更新</p>
-            <table>
-                <thead>
-                <tr class="thead_tr">
-                    <th class="th-01">序号</th>
-                    <th class="th-02">关键词</th>
-                    <th class="th-03"></th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr class="">
-                        <td class="td-01">置顶</td>
-                        <td class="td-02">
-                            <a href="https://weibo.com/p/1008086ce193057da1da01a284f80ec2868ca9/super_index" target="_blank">EXO每日一签到</a>
-                        </td>
-                        <td class="td-03"><i class="icon-txt icon-txt-hot">热</i></td>
+</head>
+<body>
+    <div class="content">
+        <!-- <div class="title">每周地榜</div> -->
+        <div id="generic" class="carousel slide" data-ride="carousel" >
+            <!-- 轮播（Carousel）项目 -->
+           <div class="carousel-inner" >
+            <div class="item active">
+                <div class="img1">
+                   <img alt="Third slide" src="img/kms.jpg" class="image0" >
+                </div>
+            </div>
+            <div class="item">
+                <div class="img1">
+                   <img alt="Third slide" src="img/jkm1.jpg" class="image0">
+                   <img alt="Third1 slide" src="img/kjm1.jpg" style="width: 50%;">
+                </div>
+            </div>
+             <div class="item">
+                <div class="img1">
+                    <img alt="First slide" src="img/bbh.jpg" class="img-responsive"   >
+                </div>
+               
+             </div>
+             
+             <div class="item">
+                <div class="img1">
+                   <img alt="Third slide" src="img/pcy.jpg" class="image0" >
+                   <img alt="Third slide" src="img/pcy1.jpg">
+                </div>
+            </div>
+             <div class="item">
+                <div class="img1">
+                   <img alt="Third slide" src="img/dks2.jpg" class="img-responsive" >
+                </div>
+            </div>
+            <div class="item">
+                <div class="img1">
+                   <img alt="Third slide" src="img/kji.gif" class="image0" >
+                   <img alt="Third1 slide" src="img/kji.jpg" style="width: 50%;">
+                </div>
+            </div>
+            <div class="item">
+                <div class="img1">
+                   <img alt="Third slide" src="img/osh.jpg" class="image0" >
+                   <img alt="Third1 slide" src="img/osh1.jpg" style="width: 50%;">
+                </div>
+            </div>
+            <div class="item">
+                <div class="img1">
+                   <img alt="Third slide" src="img/exo.jpg" class="img-responsive" >
+                </div>
+            </div>
+           </div>
+           <!-- 轮播（Carousel）导航 -->
+           <a class="left carousel-control" href="#generic" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left"></span>
+           </a>
+           <a class="right carousel-control" href="#generic" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right"></span>
+           </a>
+         </div>
+         <div class="list">
+             <div class="tt">
+                <table>
+                    <thead>
+                    <tr class="thead_tr">
+                        <th class="th-01">序号</th>
+                        <th class="th-02">关键词</th>
+                        <th class="th-03"></th>
                     </tr>
-                                                                                                                        <tr class="">
-                            <td class="td-01 ranktop">1</td>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td class="td-01">置顶</td>
                             <td class="td-02">
-                                <a href="https://s.weibo.com/weibo?q=%23%E5%90%B4%E4%B8%96%E5%8B%8B%E7%A1%AE%E5%AE%9A%E5%87%BA%E6%BC%94%E6%B5%B7%E7%9B%972%23" target="_blank">吴世勋确认出演海盗2</a>
-                                <span>3856874</span>
+                                <a href="https://weibo.com/p/1008086ce193057da1da01a284f80ec2868ca9/super_index" target="_blank">EXO每日一签到</a>
                             </td>
-                            <td class="td-03"><i class="icon-txt icon-txt-hot">热</i></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">2</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%25E5%2590%25B4%25E4%25B8%2596%25E5%258B%258B%25E9%259B%2595%25E5%2588%25BB%25E7%25BE%258E%25E7%2594%25B7?topnav=1&wvr=6&b=1" target="_blank">吴世勋 雕刻美男</a>
-                                                                <span>2426674</span>
-                                                            </td>
                             <td class="td-03"></td>
                         </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">3</td>
-                            <td class="td-02">
-                                                                                                <a href_to="https://s.weibo.com/weibo?q=%23%E5%90%B4%E4%B8%96%E5%8B%8B%E8%92%82%E4%BD%B3%E5%A9%B7%E5%93%81%E7%89%8C%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%8C%BA%E5%BD%A2%E8%B1%A1%E4%BB%A3%E8%A8%80%E4%BA%BA%23" href="javascript:void(0);" suda-data="key=tblog_search_weibo&amp;value=seqid:159227467655506409575|type:0|t:0|pos:1-0|q:|ext:click:ad_hotword_realtime,adid:86141" action-data="ad_id=86141&amp;num=3&amp;type=C2S&amp;cate=PC_realtime" action-type="realtimehot_ad" word="618断货王空气霜" url_show="" url_click="" url2_show="" url2_click="">蒂佳婷616直播间解锁新鲜世勋</a>
-                                                                <span>2425745</span>
-                                                            </td>
-                            <td class="td-03"><i class="icon-txt icon-txt-recommend">荐</i></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">4</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%25E8%25BE%25B9%25E4%25BC%25AF%25E8%25B4%25A4%2520one%2520solo%2520top?topnav=1&amp;wvr=6&amp;b=1" target="_blank">边伯贤 one solo top</a>
-                                                                <span>2333753</span>
-                                                            </td>
-                            <td class="td-03"><i class="icon-txt icon-txt-hot">热</i></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">5</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo?q=%23%E6%9C%B4%E7%81%BF%E7%83%88%E6%9D%8E%E4%BB%99%E5%A7%AC%E5%90%88%E4%BD%9C%23" target="_blank">李仙姬朴灿烈合作曲安否空降12</a>
-                                                                <span>1872100</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">6</td>
-                            <td class="td-02">
-                                                                                                <a href_to="https://s.weibo.com/weibo?q=%23%E6%9D%8E%E4%BB%99%E5%A7%AC%E6%9C%B4%E7%81%BF%E7%83%88%E6%96%B0%E6%AD%8CMV%23" href="javascript:void(0);" suda-data="key=tblog_search_weibo&amp;value=seqid:159227467655506409575|type:0|t:0|pos:1-0|q:|ext:click:ad_hotword_realtime,adid:86144" action-data="ad_id=86144&amp;num=6&amp;type=C2S&amp;cate=PC_realtime" action-type="realtimehot_ad" word="李仙姬朴灿烈新歌MV" url_show="" url_click="" url2_show="" url2_click="">李仙姬朴灿烈新歌MV</a>
-                                                                <span>1861204</span>
-                                                            </td>
-                            <td class="td-03"><i class="icon-txt icon-txt-recommend">热</i></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">7</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%25E9%2583%25BD%25E6%259A%25BB%25E7%25A7%2580%25E9%2587%2591%25E7%258F%2589%25E9%2594%25A1%25E5%2590%2588%25E4%25BD%2593?topnav=1&wvr=6&b=1" target="_blank">都暻秀金珉锡军队演出合体</a>
-                                                                <span>1327282</span>
-                                                            </td>
-                            <td class="td-03"><i class="icon-txt icon-txt-hot">热</i></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">8</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%25E5%25BD%2592%25E8%25BF%2598%25E6%25BC%2594%25E5%2587%25BA%25E6%258E%25A8%25E8%25BF%259F?topnav=1&wvr=6&b=1" target="_blank">归还演出推迟</a>
-                                                                <span>1315642</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">9</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%25E9%2587%2591%25E9%2592%259F%25E4%25BB%2581%2520bubble?topnav=1&wvr=6&b=1" target="_blank">金钟仁 bubble</a>
-                                                                <span>1306063</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">10</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/ktown4u%25E6%2588%25AA%25E8%2587%25B3%25E7%259B%25AE%25E5%2589%258D%25E5%258F%25B2%25E4%25B8%258A%25E9%2594%2580%25E9%2587%258F%25E6%259C%2580%25E9%25AB%2598%25E7%259A%2584%25E4%25B8%2593%25E8%25BE%2591top3?topnav=1&wvr=6&b=1" target="_blank">边伯贤 kt4销量第一</a>
-                                                                <span>1302982</span>
-                                                            </td>
-                            <td class="td-03"><i class="icon-txt icon-txt-hot">热</i></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">11</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%25E9%2587%2591%25E9%2592%259F%25E4%25BB%2581solo?topnav=1&wvr=6&b=1" target="_blank">金钟仁快solo</a>
-                                                                <span>1151453</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">12</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/SC%25E5%25B0%258F%25E5%2588%2586%25E9%2598%259F%25E4%25BB%25A3%25E8%25A8%2580cass?topnav=1&wvr=6&b=1" target="_blank">SC小分队代言cass</a>
-                                                                <span>1065865</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">13</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo?q=SC%E5%9B%9E%E5%BD%92&wvr=6&b=1&Refer=SWeibo_box" target="_blank">EXO-SC何时回归</a>
-                                                                <span>1267625</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">14</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%25E9%2587%2591%25E4%25BF%258A%25E5%258B%2589%2520%25E5%25BF%2583%2520for%2520U?topnav=1&wvr=6&b=1" target="_blank">金俊勉 心 for U</a>
-                                                                <span>717047</span>
-                                <img src="./微博搜索-热搜榜_files/2018new_xin_org.png" title="[心]" alt="[心]" class="face">                            </td>
-                            <td class="td-03"><i class="icon-txt icon-txt-hot">热</i></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">15</td>
-                            <td class="td-02">
-                                                                <a href="/" target="_blank">EXO什么时候合体，我竟找不出答案</a>
-                                                                <span>637893</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">16</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%23EXO%E5%BF%83%E5%8A%A8%E7%8B%99%E5%87%BB%23?topnav=1&wvr=6&topsug=1" target="_blank">点击收获帅哥</a>
-                                                                <span>565356</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">17</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo?q=%E9%87%91%E4%BF%8A%E5%8B%89%E7%BB%93%E6%9D%9F%E8%AE%AD%E7%BB%83&wvr=6&b=1&Refer=SWeibo_box" target="_blank">金俊勉签名大会</a>
-                                                                <span>564925</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">18</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo?q=%E9%83%BD%E6%9A%BB%E7%A7%80%E6%BC%94%E6%8A%80&wvr=6&b=1&Refer=SWeibo_box" target="_blank">都暻秀演技</a>
-                                                                <span>506633</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">19</td>
-                            <td class="td-02">
-                                                                <a href="https://weibo.com/p/100808ca06510d8afcb742d1e4612aef527d61/super_index" target="_blank">金珉锡童颜</a>
-                                                                <span>504884</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">20</td>
-                            <td class="td-02">
-                                                                <a href=https://s.weibo.com/weibo?q=%23exo%E7%9A%84%E6%97%B6%E5%85%89%E6%9C%BA%E5%99%A8%23" target="_blank">exo的时光机器</a>
-                                                                <span>503171</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">21</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%23EXO%E6%98%9F%E9%99%85%E6%97%85%E9%80%94%23?topnav=1&wvr=6&topsug=1" target="_blank">exo星际旅途</a>
-                                                                <span>447768</span>
-                                                                <img src="./微博搜索-热搜榜_files/2018new_chongjing_org.png" title="[憧憬]" alt="[憧憬]" class="face"> 
-                                <!-- <img src="./微博搜索-热搜榜_files/2018new_wenhao_org.png" title="[费解]" alt="[费解]" class="face">                            </td> -->
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">22</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo?q=%23%E4%B8%8Eexo%E6%90%BA%E6%89%8B%E5%90%8C%E8%A1%8C%23" target="_blank">与exo携手同行</a>
-                                                                <span>398176</span>
-                                <img src="./微博搜索-热搜榜_files/2018new_chongjing_org.png" title="[憧憬]" alt="[憧憬]" class="face">                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">23</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo?q=%23EXO%E5%BF%83%E5%8A%A8%E6%97%A5%E8%AE%B0%23" target="_blank">exo心动日记</a>
-                                                                <span>379691</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">24</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo/%23EXO%E7%88%B1%E8%B1%86%E6%95%99%E7%A7%91%E4%B9%A6%23" target="_blank">EXO爱豆教科书</a>
-                                                                <span>360474</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                                                                                            <tr class="">
-                            <td class="td-01 ranktop">25</td>
-                            <td class="td-02">
-                                                                <a href="https://s.weibo.com/weibo?q=%23EXO%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%23" target="_blank">EXO王者归来</a>
-                                                                <span>240255</span>
-                                                            </td>
-                            <td class="td-03"></td>
-                        </tr>
-                        
-                    </tbody>
-            </table>
-        </div>
-    </div>
-    <!--/内容-->
-
-    <script type="text/javascript" charset="UTF-8" src="./微博搜索-热搜榜_files/base.js.下载"></script>
-    <script type="text/javascript" charset="UTF-8" src="./微博搜索-热搜榜_files/common.js.下载"></script>
-    <script type="text/javascript" charset="UTF-8" src="./微博搜索-热搜榜_files/summary.js.下载"></script>
-</div>
-<!--脚部-->
-<div class="m-footer">
-    <div class="bottom">
-        <div class="m-outlink">
-            <div class="link">
-                <a href="https://weibo.com/p/1008086ce193057da1da01a284f80ec2868ca9/super_index" class="icon-wb" target="_blank" title="EXO"></a>
-                <a href="https://weibo.com/p/10080806a26d08fe32311bd7de3474bb9a6ce1/super_index" target="_blank" title="微博帮助">金珉锡</a>
-                <a href="https://weibo.com/p/10080869869cdb5c75cc11eb578f1a9c67a619/super_index" target="_blank" title="意见反馈">金俊勉</a>
-                <a href="https://weibo.com/p/100808c24d76f3c05f61bd2d2c6f1300cc17e5?k=%E8%BE%B9%E4%BC%AF%E8%B4%A4&forward_name=pageinfo&_from_=topic_forward target="_blank" title="开放平台">边伯贤</a>
-                <a href="https://weibo.com/p/100808fabd661fd995d6402940c055dbc1e9c8/super_index" target="_blank" title="微博招聘">朴灿烈</a>
-                <a href="https://weibo.com/p/100808c1022c0d51f197cd4c766f70be31ffcf/super_index" target="_blank" title="新浪网导航">都暻秀</a>
-                <a href="https://weibo.com/p/100808c8821d7a320920f101333b3fca04c28a/super_index" target="_blank" title="社区管理中心">金钟仁</a>
-                <a href="https://weibo.com/p/100808d3b3cef812a9ae03a21734800ea3697b?u=6ce193057da1da01a284f80ec2868ca9&m=4516406974327942&cu=5887401584&k=%E5%90%B4%E4%B8%96%E5%8B%8B&forward_name=pageinfo&_from_=topic_forward" target="_blank" title="微博社区公约">吴世勋</a>
+                                                                                                                            <tr class="">
+                                <td class="td-01 ranktop">1</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo?q=%23%E5%90%B4%E4%B8%96%E5%8B%8B%E7%A1%AE%E5%AE%9A%E5%87%BA%E6%BC%94%E6%B5%B7%E7%9B%972%23" target="_blank">吴世勋确认出演海盗2</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">2</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%25E5%2590%25B4%25E4%25B8%2596%25E5%258B%258B%25E9%259B%2595%25E5%2588%25BB%25E7%25BE%258E%25E7%2594%25B7?topnav=1&wvr=6&b=1" target="_blank">吴世勋 雕刻美男</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">3</td>
+                                <td class="td-02">
+                                    <a href_to="https://s.weibo.com/weibo?q=%23%E5%90%B4%E4%B8%96%E5%8B%8B%E8%92%82%E4%BD%B3%E5%A9%B7%E5%93%81%E7%89%8C%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%8C%BA%E5%BD%A2%E8%B1%A1%E4%BB%A3%E8%A8%80%E4%BA%BA%23" href="javascript:void(0);" suda-data="key=tblog_search_weibo&amp;value=seqid:159227467655506409575|type:0|t:0|pos:1-0|q:|ext:click:ad_hotword_realtime,adid:86141" action-data="ad_id=86141&amp;num=3&amp;type=C2S&amp;cate=PC_realtime" action-type="realtimehot_ad" word="618断货王空气霜" url_show="" url_click="" url2_show="" url2_click="">蒂佳婷616直播间解锁新鲜世勋</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">4</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%25E8%25BE%25B9%25E4%25BC%25AF%25E8%25B4%25A4%2520one%2520solo%2520top?topnav=1&amp;wvr=6&amp;b=1" target="_blank">边伯贤 one solo top</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">5</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo?q=%23%E6%9C%B4%E7%81%BF%E7%83%88%E6%9D%8E%E4%BB%99%E5%A7%AC%E5%90%88%E4%BD%9C%23" target="_blank">李仙姬朴灿烈合作曲安否空降12</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">6</td>
+                                <td class="td-02">
+                                    <a href_to="https://s.weibo.com/weibo?q=%23%E6%9D%8E%E4%BB%99%E5%A7%AC%E6%9C%B4%E7%81%BF%E7%83%88%E6%96%B0%E6%AD%8CMV%23" href="javascript:void(0);" suda-data="key=tblog_search_weibo&amp;value=seqid:159227467655506409575|type:0|t:0|pos:1-0|q:|ext:click:ad_hotword_realtime,adid:86144" action-data="ad_id=86144&amp;num=6&amp;type=C2S&amp;cate=PC_realtime" action-type="realtimehot_ad" word="李仙姬朴灿烈新歌MV" url_show="" url_click="" url2_show="" url2_click="">李仙姬朴灿烈新歌MV</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">7</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%25E9%2583%25BD%25E6%259A%25BB%25E7%25A7%2580%25E9%2587%2591%25E7%258F%2589%25E9%2594%25A1%25E5%2590%2588%25E4%25BD%2593?topnav=1&wvr=6&b=1" target="_blank">都暻秀金珉锡军队演出合体</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">8</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%25E5%25BD%2592%25E8%25BF%2598%25E6%25BC%2594%25E5%2587%25BA%25E6%258E%25A8%25E8%25BF%259F?topnav=1&wvr=6&b=1" target="_blank">归还演出推迟</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">9</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%25E9%2587%2591%25E9%2592%259F%25E4%25BB%2581%2520bubble?topnav=1&wvr=6&b=1" target="_blank">金钟仁 bubble</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">10</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/ktown4u%25E6%2588%25AA%25E8%2587%25B3%25E7%259B%25AE%25E5%2589%258D%25E5%258F%25B2%25E4%25B8%258A%25E9%2594%2580%25E9%2587%258F%25E6%259C%2580%25E9%25AB%2598%25E7%259A%2584%25E4%25B8%2593%25E8%25BE%2591top3?topnav=1&wvr=6&b=1" target="_blank">边伯贤 kt4销量第一</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">11</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%25E9%2587%2591%25E9%2592%259F%25E4%25BB%2581solo?topnav=1&wvr=6&b=1" target="_blank">金钟仁快solo</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">12</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/SC%25E5%25B0%258F%25E5%2588%2586%25E9%2598%259F%25E4%25BB%25A3%25E8%25A8%2580cass?topnav=1&wvr=6&b=1" target="_blank">SC小分队代言cass</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">13</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo?q=SC%E5%9B%9E%E5%BD%92&wvr=6&b=1&Refer=SWeibo_box" target="_blank">EXO-SC何时回归</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">14</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%25E9%2587%2591%25E4%25BF%258A%25E5%258B%2589%2520%25E5%25BF%2583%2520for%2520U?topnav=1&wvr=6&b=1" target="_blank">金俊勉 心 for U</a>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">15</td>
+                                <td class="td-02">
+                                    <a href="/" target="_blank">EXO什么时候合体，我竟找不出答案</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">16</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%23EXO%E5%BF%83%E5%8A%A8%E7%8B%99%E5%87%BB%23?topnav=1&wvr=6&topsug=1" target="_blank">点击收获帅哥</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">17</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo?q=%E9%87%91%E4%BF%8A%E5%8B%89%E7%BB%93%E6%9D%9F%E8%AE%AD%E7%BB%83&wvr=6&b=1&Refer=SWeibo_box" target="_blank">金俊勉签名大会</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">18</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo?q=%E9%83%BD%E6%9A%BB%E7%A7%80%E6%BC%94%E6%8A%80&wvr=6&b=1&Refer=SWeibo_box" target="_blank">都暻秀演技</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">19</td>
+                                <td class="td-02">
+                                    <a href="https://weibo.com/p/100808ca06510d8afcb742d1e4612aef527d61/super_index" target="_blank">金珉锡童颜</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">20</td>
+                                <td class="td-02">
+                                    <a href=https://s.weibo.com/weibo?q=%23exo%E7%9A%84%E6%97%B6%E5%85%89%E6%9C%BA%E5%99%A8%23" target="_blank">exo的时光机器</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">21</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%23EXO%E6%98%9F%E9%99%85%E6%97%85%E9%80%94%23?topnav=1&wvr=6&topsug=1" target="_blank">exo星际旅途</a>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">22</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo?q=%23%E4%B8%8Eexo%E6%90%BA%E6%89%8B%E5%90%8C%E8%A1%8C%23" target="_blank">与exo携手同行</a>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">23</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo?q=%23EXO%E5%BF%83%E5%8A%A8%E6%97%A5%E8%AE%B0%23" target="_blank">exo心动日记</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">24</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo/%23EXO%E7%88%B1%E8%B1%86%E6%95%99%E7%A7%91%E4%B9%A6%23" target="_blank">EXO爱豆教科书</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            <tr class="">
+                                <td class="td-01 ranktop">25</td>
+                                <td class="td-02">
+                                    <a href="https://s.weibo.com/weibo?q=%23EXO%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5%23" target="_blank">EXO王者归来</a>
+                                </td>
+                                <td class="td-03"></td>
+                            </tr>
+                            
+                        </tbody>
+                </table>
             </div>
-            <p class="copyright">
-                地有限公司 纯属娱乐 若有侵犯 删除
-                <a href="https://weibo.com/aj/static/jww.html" target="_blank">EXOplant</a>
-                <a href="http://www.miibeian.gov.cn/" target="_blank">7个帅哥不容错过</a>
-                <select id="pl_language_language">
-                    <option value="zh-cn" selected="selected">中文(简体)</option>
-                    <option value="zh-tw">中文(繁体)</option>
-                </select>
-                
-            </p>
+        <div class="name">
+            每周地榜
         </div>
-    </div>      
-    <!-- <script src="https://js.t.sinajs.cn/t5/pack/static/musicplayer/musicplayer_stk_v6.1.5.js"></script> -->
-    <script>
-    // //设置用户uid 用于同步赞状态
-    // WEIBO_MUSIC_PLAYER.load({page_id:''});
-    // //监听赞事件
-    // //监听分享事件
-    // WEIBO_MUSIC_PLAYER.on('share', function (evt, song) {
-    //     alert(song.copy);
-    //     song //歌曲的所有信息      
-    // });
-    </script>
-
-
-</div>
-<!--脚部-->
-<!--回到顶部-->
-<div id="pl_common_scrollToTop">
-    <div class="m-gotop" node-type="scrollToTop" style="display: none;">
-        <a href="javascript:void(0);" class="wbicon">Ú</a>
     </div>
-</div>
-<!--/回到顶部-->
-
-<script src="./微博搜索-热搜榜_files/topInit.js.下载"></script>
-<script type="text/javascript">
-    (function() {
-        WBtopGlobal && WBtopGlobal.init({
-            "name":"爱丽热搜榜",
-            "onick":"爱丽热搜榜",
-            "uid":"5887401584",
-            "lang":"zh-cn",
-            'islogin':1,
-            "backurl":"//s.weibo.com"
-        });
-    })();
-</script>
-<script type="text/javascript" charset="utf-8" async="" src="./微博搜索-热搜榜_files/suda.js.下载"></script>
-<!-- SUDA_CODE_START -->
-<noscript><img width="0" height="0" src="//beacon.sina.com.cn/a.gif?noScript" border="0" alt="" /></noscript>
-<!-- SUDA_CODE_END -->
-
-<!-- video -->
-<!-- <script src="//js.t.sinajs.cn/t6/page/js/pl/third/search/index.js?version=2018073117" type="text/javascript"></script> -->
-
-<div id="weibo_top_public"><!--spec start--><!--简易顶部导航拼页面用-->
-    <div class="WB_global_nav WB_global_nav_v2 WB_global_nav_alpha " node-type="top_all">
-      <div class="gn_header clearfix">
-        <!-- logo -->
-        <div class="gn_logo" node-type="logo" data-logotype="logo" data-logourl="//weibo.com?topnav=1&amp;mod=logo">
-	        <a href="https://weibo.com/?topnav=1&amp;mod=logo" class="box" title="" node-type="logolink" suda-uatrack="key=topnav_tab&amp;value=weibologo" target="_top">
-	        	            	<span class="logo"></span>
-            		        </a>
+        <div style="width: 100%;text-align: center;height: 100px;line-height: 50px;">
+            围棋地粉出品 纯属娱乐 可供参考 图源网络 侵删
+            <div style="height: 30px;"></div>
         </div>
-         <!-- logo -->
-         <!-- 搜索    -->
-                        <div style="float: left;position: relative; width: 218px;height: 28px;background-color: #f2f2f5;margin: 9px 0 0 10px; border: 1px solid #ccc;">
-                    <span style="color: #999;position: absolute; bottom: 5px;">大家正在搜：地粉为何这么有才</span>
-                    <!-- <input type="text" node-type="searchInput" autocomplete="nope" value="" class="W_input" name="15922796397822"> -->
-          <a href="javascript:void(0);" title="搜索" node-type="searchSubmit" class="W_ficon ficon_search S_ficon" suda-uatrack="key=topnav_tab&amp;value=search" target="_top">f</a>
-          <!--搜索热词下拉-->
-          <div class="gn_topmenulist_search" node-type="searchSuggest" style="display:none;">
-             <div class="gn_topmenulist">
-              <div node-type="basic"></div>
-              <div node-type="plus"></div>
-            </div>
-          </div>
-          <!--/搜索热词下拉--> 
-          
-        </div>
-        <!-- 搜索    -->            
-        <div class="gn_position">
-	        <div class="gn_nav">
-	            <ul class="gn_nav_list">
-	          	    <li>
-                        <a href="https://weibo.com/p/1008086ce193057da1da01a284f80ec2868ca9/super_index" nm="home" class="S_txt1" suda-uatrack="key=topnav_tab&amp;value=homepage" target="_top"><em class="W_ficon ficon_home S_ficon">E</em><em class="S_txt1">首页</em><em class="W_new"></em></a></li>
-                                          <li><a href="https://weibo.com/tv" nm="tv" class="S_txt1" suda-uatrack="key=topnav_tab&amp;value=video"><em class="W_ficon ficon_wb_vb S_ficon"></em><em class="S_txt1">视频</em><em class="W_new"></em></a></li>
-                                        <li><a href="https://d.weibo.com/?topnav=1&amp;mod=logo&amp;wvr=6" nm="find" class="S_txt1" suda-uatrack="key=topnav_tab&amp;value=discover" target="_top"><em class="W_ficon ficon_found S_ficon">F</em><em class="S_txt1">发现</em></a></li>
-	                                       	                      <li><a href="http://game.weibo.com/?topnav=1&amp;mod=logo&amp;wvr=6" nm="game" class="S_txt1" suda-uatrack="key=topnav_tab&amp;value=game" target="_top"><em class="W_ficon ficon_game S_ficon">G</em><em class="S_txt1">游戏</em></a></li>
-                        	                 	                <!-- <li><a href="/" target="_top"><em class="W_ficon ficon_user S_ficon">H</em><em class="S_txt1">爱丽热搜榜</em></a></li> -->
-	            </ul>
-	        </div>
-	        <div class="gn_set S_line1">
-	          <!-- <div class="gn_set_list"><a href="javascript:void(0);" node-type="msg" target="_top"><em class="W_ficon ficon_mail S_ficon">I</em><em class="W_new_count">1</em></a>
-	            <div class="gn_topmenulist gn_topmenulist_notice" node-type="msgLayer" style="display:none">
-	            </div>
-                <div class="gn_topmenulist_tips" style="" node-type="tips"><!--tip start-->
-                    <!-- <a href="javascript:void(0);" action-type="close" class="W_ficon ficon_close S_ficon" suda-data="key=tblog_home_new&amp;value=topnav_sign_close">X</a><ul><li><a target="_top" suda-data="key=yellowtag_remind_click&amp;value=cmt_remind" href="https://weibo.com/comment/inbox?topnav=1&amp;wvr=6&amp;mod=message&amp;f=1&amp;need_filter=1">查看评论</a></li></ul></div> -->
-	          <!-- </div> --> 
-	          <div class="gn_set_list"><a href="javascript:void(0);" node-type="account" nm="account" target="_top"><em class="W_ficon ficon_set S_ficon">*</em> </a>
-	            <div class="gn_topmenulist gn_topmenulist_set" node-type="accountLayer" style="display:none"><!--data start--><ul><li><a dot="pos55b99b65482fe" href="https://account.weibo.com/set/index?topnav=1&amp;wvr=6" suda-data="key=account_setup&amp;value=account_setup">帐号设置</a></li><li><a dot="pos55b99bf4bba8f" target="_top" href="https://vip.weibo.com/?topnav=1&amp;wvr=6" suda-data="top_account&amp;value=member_center">会员中心</a></li><li><a dot="pos55b9df2cc0557" target="_top" href="https://verified.weibo.com/verify?topnav=1&amp;wvr=6" suda-data="key=pc_apply_entry&amp;value=home_top_entrance">V认证</a></li> <li><a dot="pos55b9df5d53f10" target="_top" href="https://security.weibo.com/account/security?topnav=1&amp;wvr=6" suda-data="key=account_setup&amp;value=account_safe">帐号安全</a></li> <li><a dot="pos55b9df9b80cae" target="_top" href="https://account.weibo.com/set/privacy?topnav=1&amp;wvr=6" suda-data="key=account_setup&amp;value=privacy_setup">隐私设置</a></li><li><a target="_top" href="https://account.weibo.com/set/shield?topnav=1&amp;wvr=6">屏蔽设置</a></li><li><a dot="pos55b9dfb6dd2f7" href="https://account.weibo.com/set/message?topnav=1&amp;wvr=6" suda-data="key=account_setup&amp;value=notice_setup">消息设置</a></li><li><a dot="pos55b9dfda375ef" href="https://kefu.weibo.com/?topnav=1&amp;wvr=6" suda-data="key=account_setup&amp;value=helpcenter">帮助中心</a></li><li class="line S_line1"></li><li class="gn_func"><a target="_top" suda-data="key=account_setup&amp;value=quit" href="https://weibo.com/logout.php?backurl=%2F%2Fs.weibo.com">退出</a></li></ul><div class="W_layer_arrow"><span class="W_arrow_bor W_arrow_bor_t"><i class="S_line3"></i><em class="S_bg2_br"></em></span></div></div>
-	          </div>
-	          <div class="gn_set_list"><a href="https://weibo.com/" node-type="publish" suda-data="key=quick_pubblog&amp;value=quickpub_entrance" target="_top"><em class="W_ficon ficon_send S_ficon">ß</em></a>
-	          </div>
-          		<!--下拉层--> 
-          
-          		<!--/下拉层--> 
-        	</div>
-        </div>         
-      </div>
+        
     </div>
-    <!--/简易顶部导航拼页面用-->
-<!--spec end--></div></body></html>
+</body>
+<script src="js/jquery.js"></script>    
+<script src="js/bootstrap.min.js"></script>
+</html>
